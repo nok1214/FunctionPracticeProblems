@@ -13,7 +13,7 @@ step 6: return the variable(theLongestWord);
 step 7: run the function with a given string;
 */
 
-// start of the code
+//start of the code
 
 function findLongestWord(str) {
     var splitString = str.split(' ');                                   // split string into a new arry of string by space;
@@ -30,3 +30,42 @@ function findLongestWord(str) {
 }
 
 findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'); // output 'consectetur'
+
+
+//using forEach() to find the longest word;
+//code starts here
+
+function findLongestWord(str){
+    var splitString = str.split(' ');                                   // split string into a new arry of string by space;
+    var theLongestWord = 0;                                             // declear a new variable to store the longest word, which start with 0;
+    var longestWord = '';                                               //set the output value to a string where it will show the longest word in our string;
+
+    splitString.forEach(function (word){                                //use .forEach() on splitString variable since that is where we are looking for the longest word; set "word" as .forEach() value;
+        if(word.length > theLongestWord){                               //use "if" statement to check if word.length is greater than variable theLongestWord which start with 0;
+            theLongestWord = word.length;                               // if is true, theLongestWord will have a new value;
+            longestWord = word;                                         //set our longest word equal to the value that matches the condition we are looking for and store it in variable longestWord;
+        }
+    });
+    return longestWord;                                                 //return the longest word;
+}
+
+findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
+
+//using map() to find the longest word;
+//code starts here;
+
+function findLongestWord(str){
+    var splitString = str.split(' ');                                   // split string into a new arry of string by space;
+    var theLongestWord = 0;                                             // declear a new variable to store the longest word, which start with 0;
+    var longestWord = '';                                               //set the output value to a string where it will show the longest word in our string;
+
+    splitString.map(function (word){                                    //use .map() on splitString variable since that is where we are looking for the longest word; set "word" as .map() value;
+        if(word.length > theLongestWord){                               //use "if" statement to check if word.length is greater than variable theLongestWord which start with 0;
+            theLongestWord = word.length;                               // if is true, theLongestWord will have a new value;
+            longestWord = word;                                         //set our longest word equal to the value that matches the condition we are looking for and store it in variable longestWord;
+        }
+    });
+    return longestWord;                                                 //return the longest word;
+}
+
+findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
