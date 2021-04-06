@@ -20,13 +20,13 @@ step 7: return the value at the end of the function;
 function numberOfVowels(str) {
     var splitString = str.split(",");           //spliting string into individual letters;
     const vowels = ['a', 'e', 'i', 'o', 'u'];   // define what vowels are;
-    var myVowels = 0;                           //start the count at 0 or at the beginning of the string;
+    var numofVowels = 0;                           //start the count at 0 or at the beginning of the string;
      for(let char of str) { 
          if (vowels.includes(char)) {           //compare the characters in our string by using .include method;
-             myVowels++;                        //continue counting using increment;
+             numOfVowels++;                        //continue counting using increment;
          }
      }
-    return myVowels;                            //return the number of vowels in our string;
+    return numOfVowels;                            //return the number of vowels in our string;
 }
 
 numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'); // output 45;

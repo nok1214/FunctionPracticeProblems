@@ -16,16 +16,17 @@ step 7: run the function with a given string;
 // start of the code
 
 function findLongestWord(str) {
-    var splitString = str.split(' '); // split string into a new arry of string by space;
-    var theLongestWord = 0; // declear a new variable to store the longest word, which start with 0;
-
+    var splitString = str.split(' ');                                   // split string into a new arry of string by space;
+    var theLongestWord = 0;                                             // declear a new variable to store the longest word, which start with 0;
+    var longestWord = ''                                                //set the output value to a string where it will show the longest word in our string;
     for(var i=0; i< splitString.length; i++) { 
-        if(splitString[i].length > theLongestWord) { // check if first word inside splitString's length is greather than the previous value stored inside theLongestWord(0) variable;
-            theLongestWord = splitString[i].length; // if is true, theLongestWord will have a new value;
+        if(splitString[i].length > theLongestWord) {                    // check if first word inside splitString's length is greather than the previous value stored inside theLongestWord(0) variable;
+            theLongestWord = splitString[i].length;                     // if is true, theLongestWord will have a new value;
+            longestWord = splitString[i];                               //set our longest word equal to the value that matches the condition we are looking for and store it in variable longestWord;
         }
+        
     }
-    return theLongestWord;
+    return longestWord;                                                 //return the longest word instead of number;
 }
 
-findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'); // output 11
-
+findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'); // output 'consectetur'
