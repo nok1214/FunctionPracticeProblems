@@ -29,7 +29,7 @@ function findLongestWord(str) {
     return longestWord;                                                 //return the longest word instead of number;
 }
 
-findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'); // output 'consectetur'
+findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');// output 'consectetur'
 
 
 //using forEach() to find the longest word;
@@ -49,7 +49,7 @@ function findLongestWord(str){
     return longestWord;                                                 //return the longest word;
 }
 
-findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
+findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');// output 'consectetur'
 
 //using map() to find the longest word;
 //code starts here;
@@ -68,4 +68,4 @@ function findLongestWord(str){
     return longestWord;                                                 //return the longest word;
 }
 
-findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
+findLongestWord('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');// output 'consectetur'
