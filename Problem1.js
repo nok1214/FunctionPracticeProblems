@@ -6,10 +6,10 @@ and find the longest word within the string.
 /* 
 step 1: write a function(findLongestWord) that passes string (str) through;
 step 2: declear a variable(splitString) that stores the splited string(str.split) by space (' ') to include each word instead of something else;
-step 3: declear a variable(theLongestWord) that stores the longest word inside the splited string(str.split);
+step 3: declear a variable(theLongestWordCount) that stores the longest word inside the splited string(str.split);
 step 4: write a "for" loop to set a parameter on how to find the longest word by comparing the .length between splitString and theLongestWord;
-step 5: within the "for" loop element, write an "if" element to compare each words and store the new value into varable(theLongestWord);
-step 6: return the variable(theLongestWord);
+step 5: within the "for" loop element, write an "if" element to compare each words and store the new value into varable(theLongestWordCount);
+step 6: return the variable(longestWord);
 step 7: run the function with a given string;
 */
 
