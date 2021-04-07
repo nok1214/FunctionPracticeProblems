@@ -63,10 +63,10 @@ function numberOfVowels(str) {
             numOfVowels++;                                          //continue counting using increment;
         }
     });
-    console.log(numOfVowels);                                       //log the number of vowels in our string;
+    return numOfVowels;                                             //log the number of vowels in our string;
 }
 
-numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');// output 45;
+console.log(numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'));// output 45;
 
 //using .filter() and .indexOf() to find vowels in a string;
 //code starts here
@@ -81,10 +81,10 @@ function numberOfVowels(str) {
             numOfVowels++;                                          //continue counting using increment;
         }
     });
-    console.log(numOfVowels);                                       //log the number of vowels in our string;
+    return numOfVowels;                                             //log the number of vowels in our string;
 }
 
-numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');// output 45;
+console.log(numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'));// output 45;
 
 //using .forEach() and .includes() to find vowels in a string;
 //code starts here
@@ -99,7 +99,7 @@ function numberOfVowels(str) {
             numOfVowels++;                                          //continue counting using increment;
         }
     });
-    console.log(numOfVowels);                                       //log the number of vowels in our string;
+    return numOfVowels;                                             //log the number of vowels in our string;
 }
 
-numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');// output 45;
+console.log(numberOfVowels('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'));// output 45;
