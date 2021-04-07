@@ -20,14 +20,14 @@ step 7: call our function providing a string and the letter we want to count;
 //code starts here
 
 
-function counter(str, letter) {             // function with 2 arguments, str and letter;
-    var countLetter = 0;                    // set a counter position at 0 as starting position;
+function countLetter(str, letter) {             // function with 2 arguments, str and letter;
+    var letterCount = 0;                    // set a counter position at 0 as starting position;
     for (var i=0; i < str.length; i++){     // using "if" statement with .length to track the number of characters;
         if(str.charAt(i) === letter) {      // compare the letter we are looking for with .charAt on the string provided;
-            countLetter++;                  // increment along the string provided once str.charAt(i) === letter;
+            letterCount++;                  // increment along the string provided once str.charAt(i) === letter;
         }
     }
-    return countLetter
+    return letterCount
 }
 
-counter('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', "s");//output 6;
+console.log(countLetter('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', "s"));//output 6;
