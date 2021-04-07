@@ -61,7 +61,7 @@ function fizzBuzz(i) {
   if(i >= 100)                      //tell the function to stop when i reach to 100;
   return
 
-  console.log(word || i)           //log the output if one of condition is true by using "||";
+  console.log(word || i)            //log the output if one of condition is true by using "||";
 
   fizzBuzz(i++)
   
