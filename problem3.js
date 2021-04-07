@@ -16,6 +16,9 @@ step 7: call our function providing a string and the letter we want to count;
 
 */
 
+//use "for" loop to find the specified letter in a string;
+//code starts here
+
 
 function counter(str, letter) {             // function with 2 arguments, str and letter;
     var countLetter = 0;                    // set a counter position at 0 as starting position;
@@ -27,5 +30,4 @@ function counter(str, letter) {             // function with 2 arguments, str an
     return countLetter
 }
 
-counter('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', "s")
-// outcome 6
+counter('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', "s");//output 6;
