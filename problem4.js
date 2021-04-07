@@ -25,8 +25,8 @@ function isPalindrome(str) {
     return myString === reverseString;                                       //check to see if our string is palindrome, returns true or false value;
 }
 
-isPalindrome("Pull up, Eva! we’re here! Wave! Pull up!");                   // return true;
-isPalindrome("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")    // return false;
+console.log(isPalindrome("Pull up, Eva! we’re here! Wave! Pull up!"));                   // return true;
+console.log(isPalindrome("Lorem ipsum dolor sit amet, consectetur adipiscing elit."))    // return false;
 
 
 
@@ -59,5 +59,5 @@ function isPalindrome(str) {
     return true;
 }
 
-isPalindrome("Pull up, Eva! we’re here! Wave! Pull up!");                          //return true;
-isPalindrome("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")           //return false;
+console.log(isPalindrome("Pull up, Eva! we’re here! Wave! Pull up!"));                   // return true;
+console.log(isPalindrome("Lorem ipsum dolor sit amet, consectetur adipiscing elit."))    // return false;
