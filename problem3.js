@@ -5,12 +5,12 @@ a string and a letter and the function will count the number of the specified le
 */
 
 /*
-step 1: write a fucntion(counter) that accpets 2 arguments which is a string(str) and letter(letter);
-step 2: set counting variable's(countLetter) starting position at 0;
+step 1: write a fucntion(countLetter) that accpets 2 arguments which is a string(str) and letter(letter);
+step 2: set counting variable's(letterCount) starting position at 0;
 step 3: write a "for" loop element with .length to track the number of characters in a string;
 step 4: under "for" loop elemet, write an "if" statement to set the parameter by using .charAt which will index the character we are looking for;
-step 5: specify our counting variable(countLetter) to increase 1 value as we move along the string;
-step 6: return our counting variable(countLetter);
+step 5: specify our counting variable(letterCount) to increase 1 value as we move along the string;
+step 6: return our counting variable(letterCount);
 step 7: call our function providing a string and the letter we want to count;
 
 
@@ -21,10 +21,10 @@ step 7: call our function providing a string and the letter we want to count;
 
 
 function countLetter(str, letter) {             // function with 2 arguments, str and letter;
-    var letterCount = 0;                    // set a counter position at 0 as starting position;
-    for (var i=0; i < str.length; i++){     // using "if" statement with .length to track the number of characters;
-        if(str.charAt(i) === letter) {      // compare the letter we are looking for with .charAt on the string provided;
-            letterCount++;                  // increment along the string provided once str.charAt(i) === letter;
+    var letterCount = 0;                        // set a counter position at 0 as starting position;
+    for (var i=0; i < str.length; i++){         // using "if" statement with .length to track the number of characters;
+        if(str.charAt(i) === letter) {          // compare the letter we are looking for with .charAt on the string provided;
+            letterCount++;                      // increment along the string provided once str.charAt(i) === letter;
         }
     }
     return letterCount
